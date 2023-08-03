@@ -10,9 +10,9 @@ const appCore = {
             linkers: [],
             db_path : "./assets/js/db.json",
             tutor: "Fernanda Torok",
-            comision:"23507",
+            comision:"23508",
             instructorImg:"./assets/imgs/pic.jpg",
-            horarios:"Miercoles y Viernes 08:00 - 09:30"
+            horarios:"Miercoles y Viernes 11:00 - 12:30"
         }
     },
     methods: {

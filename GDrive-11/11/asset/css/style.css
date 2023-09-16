@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 150svh;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+}
+
+.carousel {
+  box-sizing: border-box;
+}
+
+main {
+  height: 60%;
+  background-color: lightcyan;
+}
+
+main > h1 {
+  margin: 0;
+}
+
+footer {
+  height: 20%;
+  background-color: lightgreen;
+}
+
+main > [class^="container"] {
+  background-color: aquamarine;
+  border: 1px solid white;
+}
+
+header [class^="col"] {
+  /* background-color: violet; */
+  border: 1px solid blue;
+}
+
+.pepe {
+  height: 200px;
+  aspect-ratio: 1;
+  background-color: red;
+  border-radius: 1rem;
+  display: inline-block;
+}
+
+header > div {
+  padding: 1rem;
+}
+
+header > div .row {
+  margin: 1rem;
+}

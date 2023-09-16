@@ -1,0 +1,4 @@
+body {
+  --__heigth-std: 300svh;
+  height: var(--__heigth-std);
+}

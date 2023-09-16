@@ -1,0 +1,14 @@
+@keyframes jumperSuper {
+  0% {
+    transform: scale(0) translateY(0px);
+  }
+  50% {
+    transform: scale(1) translateY(-400px);
+  }
+  90% {
+    transform: scale(0.3) translateY(30px);
+  }
+  100% {
+    transform: scale(0) translateY(0px);
+  }
+}

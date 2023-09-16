@@ -1,0 +1,16 @@
+@import url("./header.style.css");
+@import url("./main.style.css");
+
+:root {
+}
+
+*,
+html {
+  margin: 0;
+}
+
+body {
+  border: 10px solid red;
+  height: 100svh;
+  box-sizing: border-box;
+}

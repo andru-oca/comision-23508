@@ -1,0 +1,48 @@
+header {
+  border: 1px solid black;
+  height: 20%;
+  padding: 1rem;
+}
+
+header nav {
+  height: 100%;
+  border: 3px solid blueviolet;
+  box-sizing: border-box;
+
+  position: relative;
+  top: 100px;
+}
+
+header > nav > span {
+  height: 100%;
+  border: 3px solid blueviolet;
+  margin: 2rem 3rem 2rem 3rem;
+  padding: 2rem 3rem 2rem 3rem;
+}
+
+header a {
+  width: 200px;
+  aspect-ratio: 16/9;
+  padding: 2rem;
+  margin: 2rem;
+  background-color: blueviolet;
+}
+
+header div {
+  width: 70%;
+  margin: 0;
+  padding: 0;
+  border: 5px solid red;
+  overflow-x: hidden;
+}
+
+header > nav > div p {
+  /* margin: 2rem; */
+  width: 50rem;
+  /* max-width: fit-content; */
+  min-width: 100px;
+  border: 5px solid red;
+  box-sizing: border-box;
+
+  /* font-size: clamp(5px, 2vw + 0.5rem, 2rem); */
+}

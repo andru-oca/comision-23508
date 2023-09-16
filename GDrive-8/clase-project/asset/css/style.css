@@ -1,0 +1,20 @@
+@import url("./body.style.css");
+@import url("./container.style.css");
+
+:root {
+  --bg: #666;
+  --fg: #fff;
+
+  --border-style: 10px solid red;
+  --bg-color: linear-gradient(
+    0deg,
+    rgba(119, 119, 119, 1) 0%,
+    rgba(1, 1, 1, 1) 96%
+  );
+}
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+}

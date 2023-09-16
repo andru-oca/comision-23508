@@ -1,0 +1,27 @@
+@media (480px <= width <800px) {
+  body {
+    height: 100svh;
+    background-image: url("https://i.blogs.es/afd5e9/inux2/1366_2000.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  body main {
+    box-sizing: border-box;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    padding: 4rem;
+
+    gap: 2rem;
+
+    grid-template-areas:
+      "a a"
+      "b c"
+      "d e"
+      "d e"
+      "f f";
+  }
+}

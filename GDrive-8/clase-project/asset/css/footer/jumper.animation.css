@@ -1,0 +1,8 @@
+@keyframes jumper {
+  from {
+    transform: translateY(-200px);
+  }
+  to {
+    transform: rotateZ(560deg) translateY(0);
+  }
+}

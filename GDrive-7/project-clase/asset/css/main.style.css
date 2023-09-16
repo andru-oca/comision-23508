@@ -1,0 +1,78 @@
+main > div {
+  --gradiente-linear: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(99, 99, 188, 1) 44%,
+    rgba(0, 212, 255, 1) 100%
+  );
+
+  height: 100vh;
+}
+
+main > div > h1 {
+  position: sticky;
+  background-color: black;
+  color: white;
+  top: 10px;
+}
+
+.meta {
+  background: var(--gradiente-linear);
+  isolation: isolate;
+}
+
+.meta > div {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  /* background: var(--gradiente-linear); */
+
+  background-image: url("https://media-cdn.tripadvisor.com/media/photo-s/03/43/5f/61/el-rocoto.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.meta > div:nth-child(1) {
+}
+.meta > div:nth-child(2) {
+  position: relative;
+  top: -100px;
+  left: 100px;
+  z-index: -1;
+}
+.meta > div:nth-child(3) {
+  position: relative;
+  top: -200px;
+  left: 200px;
+  z-index: -2;
+}
+
+.meta > div:hover {
+  filter: grayscale(100%) contrast(200%);
+  /* display: none; */
+  /* visibility: hidden; */
+  opacity: 0.2;
+  scale: 1.2;
+}
+
+/* .meta > div:nth-child(2) {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+main > div:nth-child(2) {
+  position: absolute;
+}
+
+main > div:nth-child(2) {
+  border: 1px solid blue;
+  position: relative;
+  top: 200px;
+} */
+
+/* main > div:nth-child(2) {
+  position: fixed;
+  right: 0;
+  top: 50%;
+} */

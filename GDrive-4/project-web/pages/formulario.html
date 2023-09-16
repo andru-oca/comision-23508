@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+
+
+        <fieldset>
+
+            <legend>
+                <marquee behavior="" direction="">
+                    <h1>FORMULARIO DE CONTACTO
+                        <img src="../assets/media/icons/multimedia.png" alt="" width="100">
+                    </h1>
+                </marquee>
+            </legend>
+
+
+            <form method="get" class="form-example">
+                <div class="form-example">
+                    <input type="text" name="name" id="name" required placeholder="pone tu nombre!" />
+                </div>
+
+                <div class="form-example">
+                    <label for="email">Enter your email: </label>
+                    <input type="email" name="email" id="email" required />
+                </div>
+
+                <label for="meeting-time">Choose a time for your appointment:</label>
+
+                <input type="date" id="meeting-time" name="meeting-time" value="2018-06-12" min="2018-06-07"
+                    max="2023-06-14" />
+
+
+                <label for="pet-select">Choose a pet:</label>
+
+                <select name="pets" id="pet-select">
+
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="hamster">Hamster</option>
+                    <option value="parrot">Parrot</option>
+                    <option value="spider">Spider</option>
+                    <option value="goldfish" selected>Goldfish</option>
+                </select>
+
+
+
+                <section>
+                    <label for="ice-cream-choice">Choose a flavor:</label>
+                    <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+
+                    <datalist id="ice-cream-flavors">
+                        <option value="Chocolate"></option>
+                        <option value="Coconut"></option>
+                        <option value="Mint"></option>
+                        <option value="Strawberry"></option>
+                        <option value="Vanilla"></option>
+                    </datalist>
+
+                </section>
+
+                <input type="password" placeholder=" ingresa tu passwords" pattern="\d{4}">
+
+                <div class="form-example">
+                    <input type="submit" value="Subscribe!" />
+                </div>
+
+                <button type="submit">
+                    <h2>dale cacho!</h2>
+                </button>
+
+                <button type="reset">
+                    BORRA TODO!
+
+                </button>
+
+            </form>
+
+
+
+        </fieldset>
+
+
+    </main>
+    <footer></footer>
+</body>
+
+</html>

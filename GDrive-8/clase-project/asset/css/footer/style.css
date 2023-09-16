@@ -1,0 +1,28 @@
+@import url("./jumper.animation.css");
+@import url("./jumperSuper.animation.css");
+@import url("../colorChange.animation.css");
+
+footer div:first-child {
+  width: 200px;
+  aspect-ratio: 1;
+  background-color: paleturquoise;
+  border-radius: 20px;
+  border: 3px solid white;
+  display: inline-block;
+  animation: jumper 1s infinite ease-in-out, changeColor 1s infinite ease-in-out;
+}
+/* 
+footer div:not(:hover) {
+  filter: grayscale(0);
+} */
+
+footer > * + * {
+  width: 200px;
+  aspect-ratio: 1;
+  background-color: violet;
+  border-radius: 20px;
+  border: 3px solid white;
+  display: inline-block;
+  transition: filter 1s ease-in-out;
+  animation: jumperSuper 2s infinite ease-in-out;
+}

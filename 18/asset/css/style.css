@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+body{
+    height: 100svh;
+    margin:0;
+    padding: 0;
+}
+
+/* 
+main,header,footer{
+    border: 2px solid blue;
+    height: calc(1/3 *  100%);
+} */
+
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:2rem;
+}
+
+header input{
+    text-align: center;
+}
+
+
+.agus{
+    background: lightgreen;
+    color: tomato;
+}
+
+main{
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 8rem;
+    grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+    
+    padding: 4rem;
+}
+
+main > div{
+    border-radius: 1rem;
+    height: 100%;
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sandra{
+    background: blue;
+}
+
+.juan{
+    background: salmon;
+}

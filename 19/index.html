@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VUE class</title>
+  </head>
+  <body>
+    <center>
+      <main>
+        <div id="app">
+          <div v-show="display">
+            <h1>{{msg}}</h1>
+            <span v-text="msg"></span>
+            <!-- same as -->
+            <span>{{msg}}</span>
+          </div>
+          <hr />
+          <div>
+            <input type="text" v-model.lazy="inputUserCant" />
+            <button @click="()=>userItems=users.slice(0,inputUserCant)">
+              mostrar usuarios
+            </button>
+          </div>
+          <div>
+            <h1>SECTOR DE BTNS</h1>
+            <button @click="()=>display=!display">esconder</button>
+            <button @click="()=> styleSofia='sandra'">cambio style</button>
+          </div>
+          <div>EL valor del contador es {{ count }}</div>
+          <hr />
+          <div>
+            <button @click="count++">+</button>
+            <button @click="count--">-</button>
+          </div>
+
+          <div v-if="count >5">
+            <h1>ES MAYOR QUE 5</h1>
+          </div>
+
+          <hr />
+          <div v-show="display">
+            <div v-for="user in userItems" v-bind:class="styleSofia">
+              <ul>
+                <li>USUARIO {{user.name}}</li>
+                <li>EMAIL : {{user.email}}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+    </center>
+  </body>
+  <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+  <script src="./asset/js/index.js" type="module"></script>
+  <style>
+    .sofia {
+      background-color: #666;
+      color: whitesmoke;
+    }
+
+    .sandra {
+      background-color: lightpink;
+      color: black;
+    }
+    .sandra:hover {
+      scale: 1.4;
+    }
+  </style>
+</html>

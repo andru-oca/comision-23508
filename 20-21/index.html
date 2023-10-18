@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VUE 2-3 parte</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav>
+        <ul>
+          <li v-for="link in datosNav">
+            <a href="#"> {{link}} </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <hr />
+      <form>
+        <div v-for="(valor, item) in form">
+          <label>{{valor.label}}</label>
+          <br />
+          <input
+            v-bind:type="valor.type"
+            :placeholder="valor.placeholder"
+            v-model="usuarioInput[item]"
+          />
+        </div>
+        <button @click="userUploadHandler($event)">Agregar usuario</button>
+      </form>
+      <hr />
+      <div v-show="errorPOST != null">{{errorPOST}}</div>
+      <hr />
+      <button @click="usersGetHandler">Traer usuarios</button>
+      <hr />
+      <vueuser v-for="usuario in users" :user="usuario"></vueuser>
+    </main>
+    <footer></footer>
+  </body>
+  <script type="module" src="./asset/js/index.js"></script>
+</html>

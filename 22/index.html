@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./asset/css/style.css" />
+    <title>Vue Ultima Clase</title>
+  </head>
+  <body>
+    <center>
+      <header></header>
+      <main id="main">
+        <h1>Formulario de carga de Perros Perdidos</h1>
+        <hr />
+        <div>
+          <h3 v-show="errorLoad !=null">{{errorLoad}}</h3>
+          <form v-show="form!=null">
+            <div v-for="(valor,item) in form">
+              <label>{{valor.label}}</label>
+              <details>{{item}}: {{pichichu[item]}}</details>
+              <br />
+              <input
+                v-bind:type="valor.type"
+                v-bind:placeholder="valor.placeholder"
+                v-model="pichichu[item]"
+              />
+            </div>
+            <hr />
+            <button @click="postDataHandler($event)">Cargar Pichichu</button>
+          </form>
+
+          <hr />
+          <p v-show="errorPost != null">{{errorPost}}</p>
+        </div>
+
+        <hr />
+
+        <button @click="getDataHandler">Traer Pichichus</button>
+        <hr />
+
+        <pichichu
+          @click="selectBichoHandler(pichi.id)"
+          v-for="pichi in bichos"
+          :pichi="pichi"
+        ></pichichu>
+      </main>
+      <footer></footer>
+    </center>
+  </body>
+  <script type="module" src="./asset/js/index.js"></script>
+</html>

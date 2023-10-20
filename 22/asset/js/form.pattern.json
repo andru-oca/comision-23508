@@ -1,0 +1,33 @@
+{
+    "name":{
+        "label":"Nombre del pichichu",
+        "type":"text",
+        "placeholder":"Ingresa el nombre del bicho"
+    },
+    "breed":{        
+        "label":"Raza",
+        "type":"text",
+        "placeholder":"Ingresa la raza del bicho"},
+    "color":{
+        "label":"Ingresa el color",
+        "type":"color",
+        "placeholder":""
+    },
+    "owner":
+    {
+        "label":"Persona o telefono de contacto",
+        "type":"text",
+        "placeholder":"15-7656-8972"
+    }
+    ,
+    "img":{
+        "label":"Foto del pichicho",
+        "type":"url",
+        "placeholder":"https://url/bicho.jpg"
+    },
+    "last_view":{
+        "label":"Ultimo lugar visto",
+        "type":"text",
+        "placeholder":"Ingresar el ultimo lugar visto"
+    }
+}

@@ -1,0 +1,15 @@
+
+        >>>   El auto:
+        >>>     Nombre del vehiculo: golazo
+        >>>     Cantidad de ruedas: 4
+        >>>     Numero de motor: alpha-centaury666
+        >>>     Tipo de motor: V16
+        --------------------------------------------------
+    
+        >>>   El auto:
+        >>>     Nombre del vehiculo: choclito
+        >>>     Cantidad de ruedas: 3
+        >>>     Numero de motor: kajsdjaskld89897789
+        >>>     Tipo de motor: a dogde patas
+        --------------------------------------------------
+    

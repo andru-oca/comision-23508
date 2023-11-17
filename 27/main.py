@@ -21,6 +21,7 @@ from database import create_database
 from controllers import delete_user
 from controllers import read_users
 from controllers import create_user
+from controllers import update_user
 
 
 
@@ -49,7 +50,9 @@ def main():
         return
     
     if choice_crud == "c":
-        ...
+        _dni:int = int(input("dni usuario :\n"))
+        update_user(_dni,db_user)
+        print(db_user)
         return
 
     if choice_crud == "d":
